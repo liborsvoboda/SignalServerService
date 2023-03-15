@@ -1,0 +1,27 @@
+const deviceId = 28724;
+OTHER https://github.com/signalapp/libsignal-protocol-javascript/tree/f5a838f1ccc9bddb5e93b899a63de2dea9670e10
+OTEHR https://www.jsdelivr.com/package/npm/libsignal-protocol-nodejs
+
+SELECTED https://github.com/throneless-tech/libsignal-service-javascript#readme
+Služba  se storem 
+- registrace klientů
+- ukládání zpráv
+- a server v time intervalech jim to bude zasílat
+
+
+Tabulka moje čísla s tel s null/yes/no Odecílací číslo
+Tabulka čísla k otestování s tel s null/yes/no
+Tabulka zprávy u sebe / po odeslání / 
+Tabulka odeslané zprávy ID zprávy + příjemce / a příznák přijato + sloupec error edpovedi
+
+při každým odesílání se změní i odesílací číslo 
+if rate limit plný - jít na další číslo 
+
+token uložit - je pro odesílatele
+prvni pokus token/nebo jmeno/heslo/ nebo vymenit 
+
+vztvorit ve zprave promenou $phone pro unsubsribe pro moznost se odhlasit
+
+co minutu cheknout jestli je zprava k odeslani
+
+

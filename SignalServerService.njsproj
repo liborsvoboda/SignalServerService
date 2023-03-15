@@ -1,0 +1,151 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>SignalServerService</Name>
+    <RootNamespace>SignalServerService</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>97e28a68-40c9-46f2-a622-891481ec4276</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="config\serverConfig.json" />
+    <Content Include="db_model\db_model.js" />
+    <Content Include="db_model\table_Messages.js" />
+    <Content Include="db_model\table_RecipientPhones.js" />
+    <Content Include="db_model\table_SenderPhones.js" />
+    <Content Include="db_model\table_SendingStatuses.js" />
+    <Content Include="signalConfig\default.json" />
+    <Content Include="signalConfig\development.json" />
+    <Content Include="signalConfig\production.json" />
+    <Content Include="signalConfig\staging.json" />
+    <Content Include="signalConfig\test-lib.json" />
+    <Content Include="signalConfig\test.json" />
+    <Content Include="Source\.eslintignore" />
+    <Content Include="Source\.eslintrc.js" />
+    <Content Include="Source\.gitignore" />
+    <Content Include="Source\.nvmrc" />
+    <Content Include="Source\libsignal-service-javascript-master.zip" />
+    <Content Include="Source\LICENSE" />
+    <Content Include="Source\package-lock.json" />
+    <Content Include="Source\package.json" />
+    <Content Include="Source\README.md" />
+    <Content Include="package.json" />
+    <Content Include="pm2_task.js" />
+    <Content Include="README.md" />
+    <Content Include="server.js" />
+    <Content Include="Source\Test\.eslintignore" />
+    <Content Include="Source\Test\.eslintrc.js" />
+    <Content Include="Source\Test\.gitignore" />
+    <Content Include="Source\Test\.nvmrc" />
+    <Content Include="Source\Test\config\default.json" />
+    <Content Include="Source\Test\config\development.json" />
+    <Content Include="Source\Test\config\production.json" />
+    <Content Include="Source\Test\config\staging.json" />
+    <Content Include="Source\Test\config\test-lib.json" />
+    <Content Include="Source\Test\config\test.json" />
+    <Content Include="Source\Test\examples\client.js" />
+    <Content Include="Source\Test\examples\LocalSignalProtocolStore.js" />
+    <Content Include="Source\Test\LICENSE" />
+    <Content Include="Source\Test\package-lock.json" />
+    <Content Include="Source\Test\package.json" />
+    <Content Include="Source\Test\protos\DeviceMessages.proto" />
+    <Content Include="Source\Test\protos\DeviceName.proto" />
+    <Content Include="Source\Test\protos\IncomingPushMessageSignal.proto" />
+    <Content Include="Source\Test\protos\SignalService.proto" />
+    <Content Include="Source\Test\protos\Stickers.proto" />
+    <Content Include="Source\Test\protos\SubProtocol.proto" />
+    <Content Include="Source\Test\protos\UnidentifiedDelivery.proto" />
+    <Content Include="Source\Test\protos\WhisperTextProtocol.proto" />
+    <Content Include="Source\Test\README.md" />
+    <Content Include="Source\Test\src\AccountManager.js" />
+    <Content Include="Source\Test\src\AttachmentHelper.js" />
+    <Content Include="Source\Test\src\crypto.js" />
+    <Content Include="Source\Test\src\errors.js" />
+    <Content Include="Source\Test\src\Event.js" />
+    <Content Include="Source\Test\src\EventTarget.js" />
+    <Content Include="Source\Test\src\helpers.js" />
+    <Content Include="Source\Test\src\index.js" />
+    <Content Include="Source\Test\src\libphonenumber-util.js" />
+    <Content Include="Source\Test\src\Message.js" />
+    <Content Include="Source\Test\src\MessageReceiver.js" />
+    <Content Include="Source\Test\src\MessageSender.js" />
+    <Content Include="Source\Test\src\Metadata.js" />
+    <Content Include="Source\Test\src\OutgoingMessage.js" />
+    <Content Include="Source\Test\src\protobufs.js" />
+    <Content Include="Source\Test\src\ProtocolStore.js" />
+    <Content Include="Source\Test\src\ProvisioningCipher.js" />
+    <Content Include="Source\Test\src\taskWithTimeout.js" />
+    <Content Include="Source\Test\src\WebAPI.js" />
+    <Content Include="Source\Test\src\WebSocketResource.js" />
+    <Content Include="Source\Test\test\account_manager_test.js" />
+    <Content Include="Source\Test\test\contacts_parser_test.js" />
+    <Content Include="Source\Test\test\crypto_test.js" />
+    <Content Include="Source\Test\test\generate_keys_test.js" />
+    <Content Include="Source\Test\test\helpers_test.js" />
+    <Content Include="Source\Test\test\InMemorySignalProtocolStore.js" />
+    <Content Include="Source\Test\test\message_receiver_test.js" />
+    <Content Include="Source\Test\test\protocol_wrapper_test.js" />
+    <Content Include="Source\Test\test\storage_test.js" />
+    <Content Include="Source\Test\test\task_with_timeout_test.js" />
+    <Content Include="Source\Test\test\websocket-resources_test.js" />
+    <Content Include="Source\Test\test\_test.js" />
+    <Content Include="src\AccountManager.js" />
+    <Content Include="src\AttachmentHelper.js" />
+    <Content Include="src\client.js" />
+    <Content Include="src\crypto.js" />
+    <Content Include="src\errors.js" />
+    <Content Include="src\Event.js" />
+    <Content Include="src\EventTarget.js" />
+    <Content Include="src\helpers.js" />
+    <Content Include="src\index.js" />
+    <Content Include="src\libphonenumber-util.js" />
+    <Content Include="src\LocalSignalProtocolStore.js" />
+    <Content Include="src\Message.js" />
+    <Content Include="src\MessageReceiver.js" />
+    <Content Include="src\MessageSender.js" />
+    <Content Include="src\Metadata.js" />
+    <Content Include="src\OutgoingMessage.js" />
+    <Content Include="src\protobufs.js" />
+    <Content Include="src\ProtocolStore.js" />
+    <Content Include="src\ProvisioningCipher.js" />
+    <Content Include="src\taskWithTimeout.js" />
+    <Content Include="src\WebAPI.js" />
+    <Content Include="src\WebSocketResource.js" />
+    <Content Include="Zadani.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="signalConfig\" />
+    <Folder Include="Source\" />
+    <Folder Include="config\" />
+    <Folder Include="db_model\" />
+    <Folder Include="Source\Test\" />
+    <Folder Include="Source\Test\config\" />
+    <Folder Include="Source\Test\examples\" />
+    <Folder Include="Source\Test\test\" />
+    <Folder Include="Source\Test\src\" />
+    <Folder Include="Source\Test\protos\" />
+    <Folder Include="Store\" />
+    <Folder Include="src\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>

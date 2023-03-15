@@ -1,0 +1,34 @@
+{
+  "address": "0.0.0.0",
+  "host": "hostName",
+  "server": {
+    "timeout": 86400000,
+    "maxConnections": 10000,
+    "controlPort": 3300
+  },
+  "db": {
+    "host": "127.0.0.1",
+    "type": "mysql",
+    "dbname": "signalserver",
+    "user": "signal",
+    "password": "signal",
+    "poolMin": 0,
+    "poolMax": 1,
+    "poolAcquire": 1000000,
+    "poolIdle": 10000
+  },
+  "Server" :{
+	  "Config": {
+		  "CheckNewMessageIntervalSec": 10 
+	  },
+    "Data": {
+      "SenderPhones": [],
+      "RecipientPhones": [],
+      "MessagesForSend": [],
+      "OperationRunning": false,
+      "DbStatusOk": true,
+      "Operation": 0
+    },
+    "Controller": []
+  }
+}

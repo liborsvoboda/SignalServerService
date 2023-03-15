@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33417.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SignalServerService", "SignalServerService.njsproj", "{97E28A68-40C9-46F2-A622-891481EC4276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97E28A68-40C9-46F2-A622-891481EC4276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E28A68-40C9-46F2-A622-891481EC4276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E28A68-40C9-46F2-A622-891481EC4276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E28A68-40C9-46F2-A622-891481EC4276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B378799-D161-41BB-BD8F-2F6022421FE0}
+	EndGlobalSection
+EndGlobal
