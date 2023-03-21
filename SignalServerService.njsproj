@@ -46,7 +46,6 @@
     <Content Include="Source\.nvmrc" />
     <Content Include="Source\libsignal-service-javascript-master.zip" />
     <Content Include="Source\LICENSE" />
-    <Content Include="Source\package-lock.json" />
     <Content Include="Source\package.json" />
     <Content Include="Source\README.md" />
     <Content Include="package.json" />
